@@ -1,5 +1,6 @@
 import React from "react";
+import { Wrapper } from "./ui";
 
 export const App = () => {
-  return <div></div>;
+  return <Wrapper></Wrapper>;
 };
