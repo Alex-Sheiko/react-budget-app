@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+
 html, 
 body,
 body div,
@@ -229,7 +230,7 @@ input[type=button] {
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    color: #000;
-}
-
+    color: #000000;
+    margin: 0;
+};
 `;

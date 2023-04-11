@@ -1,26 +1,30 @@
-import { ReactNode, createContext, useState } from "react";
-import { ExpenseType } from "../../types/types";
+import { useState } from "react";
+import { createContext, useContext } from "react";
+import { ChildrenContextType, ExpenseContextType } from "types/types";
 
-interface ExpensesContextState {
-  expenses: ExpenseType[];
-}
+const ExpensesContext = createContext<ExpenseContextType>({} as ExpenseContextType);
 
-interface ExpensesContextProviderProps {
-  children: ReactNode;
-}
+export const useExpensesContext = () => useContext(ExpensesContext);
 
-const ExpensesContext = createContext<ExpensesContextState>({} as ExpensesContextState);
-
-export const useExpensesContextValue = () => {
-  const [expensesValue, setExpensesValue] = useState<ExpensesContextState>(() => {
-    return {
-      expenses: [],
-    };
-  });
-  return expensesValue;
+const useExpensesContextValue = () => {
+  const [expensesContext, setExpensesContext] = useState<ExpenseContextType>(() => ({
+    expenses: [],
+    setNewExpense: (expense) => {
+      setExpensesContext((ctx) => ({
+        ...ctx,
+        expenses: [...ctx.expenses, expense],
+      }));
+    },
+    deleteExpense: (id) => {
+      setExpensesContext((ctx) => ({
+        ...ctx,
+        expenses: ctx.expenses.filter((expense) => expense.id !== id),
+      }));
+    },
+  }));
+  return expensesContext;
 };
-
-export const ExpensesContextProvider = ({ children }: ExpensesContextProviderProps) => {
+export const ExpensesContextProvider = ({ children }: ChildrenContextType) => {
   return (
     <ExpensesContext.Provider value={useExpensesContextValue()}>
       {children}
