@@ -4,6 +4,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 30px;
 `;
 
 const StyledFormControls = styled.div`
@@ -13,13 +14,17 @@ const StyledFormControls = styled.div`
 `;
 
 const StyledInputForm = styled.input`
+  padding: 15px 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: none;
-  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 
   &::placeholder {
     color: #999999;
+    font-weight: 400;
   }
 
   &:focus-visible {

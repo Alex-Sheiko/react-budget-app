@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
 import { FormData } from "types/types";
-import { Title, ErrorMessage } from "components";
+import { Title, ErrorMessage, Button } from "components";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { StyledForm, StyledFormControls, StyledInputForm } from "./styles";
 import { useBudgetContext, useExpensesContext } from "context";
@@ -48,6 +48,7 @@ export const Form = () => {
         />
       </StyledFormControls>
       {errors.cost && <ErrorMessage message={errors.cost?.message} />}
+      <Button />
     </StyledForm>
   );
 };
