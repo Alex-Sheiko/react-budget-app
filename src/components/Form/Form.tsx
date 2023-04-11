@@ -31,7 +31,7 @@ export const Form = () => {
             required: "Name is required",
             pattern: { value: /[A-Za-z]/, message: "Only letters" },
             minLength: { value: 2, message: "Minimum characters 2" },
-            maxLength: { value: 15, message: "A lot of letters" },
+            maxLength: { value: 15, message: "Maximum characters 15" },
           })}
           placeholder="Enter name ..."
           type="text"
@@ -41,9 +41,9 @@ export const Form = () => {
           {...register("cost", {
             required: "Cost is required",
             minLength: { value: 1, message: "Minimum characters 1" },
-            maxLength: { value: 5, message: "High price!" },
+            maxLength: { value: 5, message: "High price" },
           })}
-          type="text"
+          type="number"
           placeholder="Enter cost ..."
         />
       </StyledFormControls>
