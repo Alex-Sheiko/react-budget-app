@@ -5,4 +5,5 @@ export const StyledExpenses = styled.div`
   flex-direction: column;
   gap: 30px;
   margin-bottom: 30px;
+  width: 100%;
 `;
