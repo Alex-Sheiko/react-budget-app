@@ -7,7 +7,6 @@ import { useBudgetContext, useExpensesContext } from "context";
 
 export const Form = () => {
   const { setNewExpense } = useExpensesContext();
-  const { budget } = useBudgetContext();
   const {
     register,
     handleSubmit,
@@ -16,10 +15,8 @@ export const Form = () => {
   } = useForm<FormData>({ mode: "onBlur" });
 
   const onSubmit: SubmitHandler<FormData> = ({ name, cost }) => {
-    if (budget > 0) {
-      setNewExpense({ name, cost, id: v4() });
-      reset();
-    }
+    setNewExpense({ name, cost, id: v4() });
+    reset();
   };
 
   return (
