@@ -7,5 +7,17 @@ import { Search } from "./Search/Search";
 import { ExpenseItem } from "components/ExpenseItem/ExpenseItem";
 import { ExpensesList } from "components/ExpensesList/ExpensesList";
 import { Budget } from "./Budget/Budget";
+import { CustomSelect } from "./CustomSelect/CustomSelect";
 
-export { Title, Form, ErrorMessage, Button, Expenses, Search, ExpensesList, ExpenseItem, Budget };
+export {
+  Budget,
+  CustomSelect,
+  Title,
+  Expenses,
+  Search,
+  ExpensesList,
+  ExpenseItem,
+  Form,
+  ErrorMessage,
+  Button,
+};

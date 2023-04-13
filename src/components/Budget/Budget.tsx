@@ -1,13 +1,13 @@
 import React from "react";
 import { StyledBudget, StyledBudgetBox, StyledBudgetControls } from "./styles";
-import { Title } from "components";
+import { CustomSelect, Title } from "components";
 
 export const Budget = () => {
   return (
     <StyledBudget>
       <StyledBudgetBox>
         <Title text="Budget App" />
-        <Title text="Budget App2" />
+        <CustomSelect />
       </StyledBudgetBox>
       <StyledBudgetControls>
         <Title text="Budget App3" />
