@@ -1,4 +1,4 @@
-import { ExpensesList, Title } from "components";
+import { ExpensesList, Search, Title } from "components";
 import { StyledExpenses } from "./styles";
 import { useDebounce, useInput } from "hooks";
 import { useExpensesContext } from "context";
@@ -20,6 +20,7 @@ export const Expenses = () => {
   return (
     <StyledExpenses>
       <Title text="Expenses" />
+      <Search {...search} />
       <ExpensesList expenses={filteredExpenses} />
     </StyledExpenses>
   );
