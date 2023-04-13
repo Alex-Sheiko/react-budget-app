@@ -6,5 +6,6 @@ import { Expenses } from "./Expenses/Expenses";
 import { Search } from "./Search/Search";
 import { ExpenseItem } from "components/ExpenseItem/ExpenseItem";
 import { ExpensesList } from "components/ExpensesList/ExpensesList";
+import { Budget } from "./Budget/Budget";
 
-export { Title, Form, ErrorMessage, Button, Expenses, Search, ExpensesList, ExpenseItem };
+export { Title, Form, ErrorMessage, Button, Expenses, Search, ExpensesList, ExpenseItem, Budget };
