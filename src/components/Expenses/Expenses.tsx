@@ -9,7 +9,7 @@ export const Expenses = () => {
   const search = useInput();
   const { expenses } = useExpensesContext();
   const [filteredExpenses, setFilteredExpenses] = useState<Expense[]>(expenses);
-  const debounceValue = useDebounce(search.value, 700);
+  const debounceValue = useDebounce<string>(search.value, 700);
 
   useEffect(() => {
     setFilteredExpenses(
