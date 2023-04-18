@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledBudget, StyledBudgetBox, StyledBudgetControls } from "./styles";
-import { BudgetCard, CustomSelect, RemainingCard, Title } from "components";
+import { BudgetCard, CustomSelect, RemainingCard, SpentCard, Title } from "components";
 
 export const Budget = () => {
   return (
@@ -12,6 +12,7 @@ export const Budget = () => {
       <StyledBudgetControls>
         <BudgetCard />
         <RemainingCard />
+        <SpentCard />
       </StyledBudgetControls>
     </StyledBudget>
   );

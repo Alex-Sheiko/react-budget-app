@@ -10,12 +10,14 @@ import { Budget } from "./Budget/Budget";
 import { CustomSelect } from "./CustomSelect/CustomSelect";
 import { BudgetCard } from "./BudgetCard/BudgetCard";
 import { RemainingCard } from "./RemainingCard/RemainingCard";
+import { SpentCard } from "./SpentCard/SpentCard";
 
 export {
   Budget,
   CustomSelect,
   BudgetCard,
   RemainingCard,
+  SpentCard,
   Title,
   Expenses,
   Search,
