@@ -9,11 +9,13 @@ import { ExpensesList } from "components/ExpensesList/ExpensesList";
 import { Budget } from "./Budget/Budget";
 import { CustomSelect } from "./CustomSelect/CustomSelect";
 import { BudgetCard } from "./BudgetCard/BudgetCard";
+import { RemainingCard } from "./RemainingCard/RemainingCard";
 
 export {
   Budget,
   CustomSelect,
   BudgetCard,
+  RemainingCard,
   Title,
   Expenses,
   Search,
