@@ -6,6 +6,8 @@ export const StyledSearch = styled.input`
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: none;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
 
   &::placeholder {
     color: #999999;

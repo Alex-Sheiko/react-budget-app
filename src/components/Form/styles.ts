@@ -15,9 +15,9 @@ const StyledFormControls = styled.div`
 
 const StyledInputForm = styled.input`
   padding: 15px 20px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   border: none;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -36,11 +36,6 @@ const StyledInputForm = styled.input`
     display: none;
     -webkit-appearance: none;
     margin: 0;
-  }
-
-  @media (max-width: 390px) {
-    font-size: 12px;
-    padding: 13px 10px;
   }
 `;
 
