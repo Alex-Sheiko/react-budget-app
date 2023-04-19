@@ -1,5 +1,5 @@
 import { ExpenseItem } from "components";
-import { StyledEmpty, StyledList } from "./styles";
+import { StyledList } from "./styles";
 import { Expense } from "types/types";
 
 interface ExpensesListProps {
@@ -7,9 +7,6 @@ interface ExpensesListProps {
 }
 
 export const ExpensesList = ({ expenses }: ExpensesListProps) => {
-  if (!expenses.length) {
-    return <StyledEmpty> Oooops 🙈</StyledEmpty>;
-  }
   return (
     <StyledList>
       {expenses.map(({ name, cost, id }) => (
