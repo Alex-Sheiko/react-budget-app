@@ -6,7 +6,7 @@ This is a simple budget app built using React. The app will create budget catego
 
 ## Preview
 
-![Image](https://github.com/Alex-Sheiko/###/blob/main/preview/###)
+![Image](https://github.com/Alex-Sheiko/react-budget-app/blob/main/preview/react-budget-app.jpg)
 
 ## Used technologies
 
