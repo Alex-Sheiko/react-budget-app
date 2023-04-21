@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import close from "../../assets/icons/close.svg";
+import { close } from "assets";
 
 export const StyledListItem = styled.li`
   display: grid;

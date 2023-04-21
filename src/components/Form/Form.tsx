@@ -1,5 +1,5 @@
 import { v4 } from "uuid";
-import { FormData } from "types/types";
+import { FormData } from "types";
 import { Title, ErrorMessage, Button } from "components";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { StyledForm, StyledFormControls, StyledInputForm } from "./styles";

@@ -1,7 +1,7 @@
 import Select, { SingleValue } from "react-select";
 import { useCurrencyContext } from "context";
 import { selectStyles } from "./styles";
-import { CurrencyOption } from "types/types";
+import { CurrencyOption } from "types";
 
 export const CustomSelect = () => {
   const { setCurrency, currencies, currentCurrency } = useCurrencyContext();

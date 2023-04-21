@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledButtonDelete, StyledItemBadge, StyledItemText, StyledListItem } from "./styles";
 import { useCurrencyContext, useExpensesContext } from "context";
 

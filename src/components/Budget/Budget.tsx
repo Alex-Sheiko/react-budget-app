@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledBudget, StyledBudgetBox, StyledBudgetControls } from "./styles";
 import { BudgetCard, CustomSelect, RemainingCard, SpentCard, Title } from "components";
 

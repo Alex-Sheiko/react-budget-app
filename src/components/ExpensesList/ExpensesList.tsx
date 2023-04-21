@@ -1,6 +1,6 @@
 import { ExpenseItem } from "components";
 import { StyledList } from "./styles";
-import { Expense } from "types/types";
+import { Expense } from "types";
 
 interface ExpensesListProps {
   expenses: Expense[];

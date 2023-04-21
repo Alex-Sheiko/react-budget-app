@@ -1,4 +1,4 @@
-import { Currency } from "config/currency";
+import { Currency } from "config";
 import { ReactNode } from "react";
 
 export interface Expense {
