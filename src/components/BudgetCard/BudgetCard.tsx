@@ -7,15 +7,18 @@ export const BudgetCard = () => {
   const inputBudget = useInput();
   const { setBudget, budget } = useBudgetContext();
   const { currentCurrency } = useCurrencyContext();
-  const [isBudgetActive, toogleBudgetActive] = useToggle();
+  const [isEditMode, toogleEditMode] = useToggle();
   const [isDisableSave, setDisableSave] = useState<boolean>(true);
 
   const handleSave = () => {
     setBudget(+inputBudget.value);
-    toogleBudgetActive();
+    toogleEditMode();
   };
 
-  const handleEdit = () => toogleBudgetActive();
+  const handleEdit = () => {
+    toogleEditMode();
+  };
+
   const debounceBudget = useDebounce(inputBudget.value, 500);
 
   useEffect(
@@ -25,7 +28,7 @@ export const BudgetCard = () => {
 
   return (
     <StyledBudgetCard>
-      {!isBudgetActive ? (
+      {isEditMode ? (
         <>
           <StyledInput {...inputBudget} placeholder="Enter Budget ..." type="number" />
           <StyledButton onClick={handleSave} disabled={isDisableSave}>
