@@ -22,7 +22,7 @@ export const Expenses = () => {
   return (
     <StyledExpenses>
       <Title text="Expenses" />
-      <Search {...search} />
+      <Search {...search} placeholder="Search..." />
       {isSearchPerformed ? (
         filteredExpenses.length > 0 ? (
           <ExpensesList expenses={filteredExpenses} />
