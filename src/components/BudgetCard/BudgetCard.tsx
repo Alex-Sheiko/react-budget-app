@@ -7,16 +7,16 @@ export const BudgetCard = () => {
   const inputBudget = useInput();
   const { setBudget, budget } = useBudgetContext();
   const { currentCurrency } = useCurrencyContext();
-  const [isEditMode, toogleEditMode] = useToggle();
+  const [isEditMode, toggleEditMode] = useToggle();
   const [isDisableSave, setDisableSave] = useState<boolean>(true);
 
   const handleSave = () => {
     setBudget(+inputBudget.value);
-    toogleEditMode();
+    toggleEditMode();
   };
 
   const handleEdit = () => {
-    toogleEditMode();
+    toggleEditMode();
   };
 
   const debounceBudget = useDebounce(inputBudget.value, 500);
